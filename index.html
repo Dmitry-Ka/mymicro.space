@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My test website</title>
+        <meta name="description" content="My test website">
+        <meta name="keywords" content="html, css, php">
+        <meta name="author" content="Dmitry K">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .grid-layout {
+            background-color: rgb(238, 235, 34);
+            padding: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'footer footer footer footer footer footer';
+            }
+            .grid-layout > div {
+            background-image: url(images/back.jpg);
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            }
+        </style>
+    </head>
+    <body bgcolor="#7CFC00">
+            <div class="grid-layout">
+            <div style="grid-area: header"><h2>website site under construction <img src="images/smile.png" alt="smile" width="30" height="auto"></h2></div>
+            <div style="grid-area: menu">Menu
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+            </div>
+            <div style="grid-area: main; height: 600px;"><img src="images/l-02.png" alt="Надпись - в разработке" width="auto" height="300"></div>
+            <div style="grid-area: right"><a target="_blank" href="https://yandex.ru" title="link">Яндекс</a></div>
+            <div style="grid-area: footer"><a target="_blank" href="https://ru.freepik.com/vectors/background">Background создан freepik - ru.freepik.com</a></div>
+            </div>
+    </body>
+</html>
